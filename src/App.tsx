@@ -7,6 +7,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import Gallery from "./pages/Gallery";
 import Rules from "./pages/Rules";
 import Fees from "./pages/Fees";
 import StudentLogin from "./pages/auth/StudentLogin";
@@ -43,6 +44,7 @@ const App = () => (
             {/* Public Routes */}
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/rules" element={<Rules />} />
             <Route path="/fees" element={<Fees />} />
             

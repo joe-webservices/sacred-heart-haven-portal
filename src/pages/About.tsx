@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -16,6 +16,61 @@ const About = () => {
               Established as part of the prestigious St. Joseph's College, Trichy, Sacred Heart Hostel has been providing 
               exceptional residential facilities for students for over five decades.
             </p>
+            {/* Gallery shortcut */}
+            <div className="mt-4">
+              <a href="/gallery" className="inline-flex items-center gap-2 text-primary font-medium underline hover:text-secondary transition-colors">
+                <Image className="w-5 h-5" />
+                Explore our Gallery
+              </a>
+            </div>
+          </div>
+
+          {/* Faith and Christian Identity Section */}
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div>
+              <Card className="shadow-lg">
+                <CardHeader className="bg-gradient-primary text-white">
+                  <CardTitle className="text-2xl font-playfair text-center">Our Christian Heritage</CardTitle>
+                </CardHeader>
+                <CardContent className="p-8">
+                  <img src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?auto=format&fit=crop&w=600&q=80" alt="Cathedral Interior" className="rounded-md mb-4 w-full h-40 object-cover" />
+                  <p className="text-lg text-gray-700">
+                    Sacred Heart Hostel draws its inspiration from the life and teachings of Jesus Christ and the Jesuit tradition of education. Daily life in the hostel is marked by a spirit of faith, compassion, and a commitment to the values of the Gospel.
+                  </p>
+                  <p className="text-md text-gray-700 mt-4">
+                    Regular prayer services, Holy Mass, and celebrations of important Christian feasts nurture the spiritual life of our community. Our chapel serves as a sanctuary for reflection, offering, and unity for students of all backgrounds.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            <div>
+              <Card className="shadow-lg">
+                <CardHeader className="bg-gradient-secondary text-white">
+                  <CardTitle className="text-2xl font-playfair text-center">Spiritual Environment</CardTitle>
+                </CardHeader>
+                <CardContent className="p-8">
+                  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Scenic Campus" className="rounded-md mb-4 w-full h-40 object-cover" />
+                  <p className="text-lg text-gray-700">
+                    The hostel offers a nurturing atmosphere rooted in Christian hospitality, welcoming students of all faiths while upholding strong values of respect and brotherhood.
+                  </p>
+                  <ul className="list-disc pl-6 mt-2 text-gray-700">
+                    <li>Morning and evening prayers in chapel</li>
+                    <li>Counseling and pastoral care by resident fathers</li>
+                    <li>Special retreats and spiritual camps</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Gallery Preview */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-primary text-center mb-10 font-playfair">A Glimpse of Our Environment</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <img src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&w=700&q=80" alt="Institute Building" className="rounded-lg shadow-md h-52 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1551038247-3d9af20df552?auto=format&fit=crop&w=700&q=80" alt="College Building" className="rounded-lg shadow-md h-52 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=80" alt="Deer & Nature" className="rounded-lg shadow-md h-52 w-full object-cover" />
+            </div>
           </div>
 
           {/* History Section */}

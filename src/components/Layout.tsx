@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -31,6 +30,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, showHeader = true }) =
               <nav className="hidden md:flex items-center space-x-6">
                 <Link to="/" className="text-gray-700 hover:text-primary transition-colors">Home</Link>
                 <Link to="/about" className="text-gray-700 hover:text-primary transition-colors">About</Link>
+                <Link to="/gallery" className="text-gray-700 hover:text-primary transition-colors">Gallery</Link>
                 <Link to="/rules" className="text-gray-700 hover:text-primary transition-colors">Rules</Link>
                 <Link to="/fees" className="text-gray-700 hover:text-primary transition-colors">Fees</Link>
                 
