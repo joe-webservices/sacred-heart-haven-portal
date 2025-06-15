@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import Image from 'next/image';
+import { Image } from "lucide-react";
 
 const About = () => {
   return (
