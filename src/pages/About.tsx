@@ -7,11 +7,12 @@ import { Image } from "lucide-react";
 const About = () => {
   return (
     <Layout>
-      <div className="py-16 bg-gradient-to-b from-white to-slate-50">
+      {/* Main wrapper with a subtle white-to-slate gradient */}
+      <div className="py-16 bg-gradient-to-b from-white via-slate-50 to-slate-200 min-h-screen">
         <div className="container mx-auto px-4">
-          {/* Header Section */}
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-primary mb-6 font-playfair">About Sacred Heart Hostel</h1>
+          {/* Header Section with modern gradient text and subtle gradient backdrop */}
+          <div className="text-center mb-16 rounded-xl px-2 py-10 bg-gradient-to-br from-white/80 via-blue-50/60 to-slate-100/80 shadow-md">
+            <h1 className="text-5xl font-bold gradient-text mb-6 font-playfair">About Sacred Heart Hostel</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Established as part of the prestigious St. Joseph's College, Trichy, Sacred Heart Hostel has been providing 
               exceptional residential facilities for students for over five decades.
@@ -28,8 +29,8 @@ const About = () => {
           {/* Faith and Christian Identity Section */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
-              <Card className="shadow-lg">
-                <CardHeader className="bg-gradient-primary text-white">
+              <Card className="shadow-lg bg-gradient-to-b from-blue-50/80 to-white">
+                <CardHeader className="bg-gradient-primary text-white rounded-t-lg">
                   <CardTitle className="text-2xl font-playfair text-center">Our Christian Heritage</CardTitle>
                 </CardHeader>
                 <CardContent className="p-8">
@@ -44,8 +45,8 @@ const About = () => {
               </Card>
             </div>
             <div>
-              <Card className="shadow-lg">
-                <CardHeader className="bg-gradient-secondary text-white">
+              <Card className="shadow-lg bg-gradient-to-b from-yellow-50/70 to-white">
+                <CardHeader className="bg-gradient-secondary text-white rounded-t-lg">
                   <CardTitle className="text-2xl font-playfair text-center">Spiritual Environment</CardTitle>
                 </CardHeader>
                 <CardContent className="p-8">
@@ -63,20 +64,26 @@ const About = () => {
             </div>
           </div>
 
-          {/* Gallery Preview */}
+          {/* Gallery Preview Section with modern gradient cards */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-primary text-center mb-10 font-playfair">A Glimpse of Our Environment</h2>
+            <h2 className="text-3xl font-bold gradient-text text-center mb-10 font-playfair">A Glimpse of Our Environment</h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <img src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&w=700&q=80" alt="Institute Building" className="rounded-lg shadow-md h-52 w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1551038247-3d9af20df552?auto=format&fit=crop&w=700&q=80" alt="College Building" className="rounded-lg shadow-md h-52 w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=80" alt="Deer & Nature" className="rounded-lg shadow-md h-52 w-full object-cover" />
+              <div className="rounded-lg shadow-md h-52 w-full bg-gradient-to-tr from-blue-200 via-white to-yellow-50 flex items-end overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&w=700&q=80" alt="Institute Building" className="h-full w-full object-cover mix-blend-multiply opacity-80" />
+              </div>
+              <div className="rounded-lg shadow-md h-52 w-full bg-gradient-to-tr from-amber-100 via-white to-blue-100 flex items-end overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1551038247-3d9af20df552?auto=format&fit=crop&w=700&q=80" alt="College Building" className="h-full w-full object-cover mix-blend-multiply opacity-80" />
+              </div>
+              <div className="rounded-lg shadow-md h-52 w-full bg-gradient-to-tr from-green-100 via-white to-yellow-100 flex items-end overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=80" alt="Deer & Nature" className="h-full w-full object-cover mix-blend-multiply opacity-80" />
+              </div>
             </div>
           </div>
 
-          {/* History Section */}
+          {/* History Section with subtle background */}
           <div className="mb-16">
-            <Card className="shadow-xl">
-              <CardHeader className="bg-gradient-primary text-white">
+            <Card className="shadow-xl bg-gradient-to-br from-white to-blue-50/70">
+              <CardHeader className="bg-gradient-primary text-white rounded-t-lg">
                 <CardTitle className="text-3xl font-playfair text-center">Our Heritage</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
@@ -104,8 +111,8 @@ const About = () => {
 
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <Card className="shadow-xl">
-              <CardHeader className="bg-gradient-secondary text-white">
+            <Card className="shadow-xl bg-gradient-to-tr from-blue-100 via-white to-yellow-50">
+              <CardHeader className="bg-gradient-secondary text-white rounded-t-lg">
                 <CardTitle className="text-2xl font-playfair text-center">Our Mission</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
@@ -117,8 +124,8 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-xl">
-              <CardHeader className="bg-gradient-primary text-white">
+            <Card className="shadow-xl bg-gradient-to-tr from-yellow-100 via-white to-blue-200">
+              <CardHeader className="bg-gradient-primary text-white rounded-t-lg">
                 <CardTitle className="text-2xl font-playfair text-center">Our Vision</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
@@ -131,11 +138,11 @@ const About = () => {
             </Card>
           </div>
 
-          {/* Administration */}
+          {/* Administration section with modern backgrounds */}
           <div className="mb-16">
-            <h2 className="text-4xl font-bold text-primary text-center mb-12 font-playfair">Administration</h2>
+            <h2 className="text-4xl font-bold gradient-text text-center mb-12 font-playfair">Administration</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center shadow-lg">
+              <Card className="text-center shadow-lg bg-gradient-to-b from-blue-100 via-white to-blue-50">
                 <CardContent className="p-8">
                   <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-3xl font-bold text-white">RW</span>
@@ -147,8 +154,7 @@ const About = () => {
                   </p>
                 </CardContent>
               </Card>
-
-              <Card className="text-center shadow-lg">
+              <Card className="text-center shadow-lg bg-gradient-to-b from-yellow-100 via-white to-yellow-50">
                 <CardContent className="p-8">
                   <div className="w-24 h-24 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-3xl font-bold text-white">HW</span>
@@ -160,8 +166,7 @@ const About = () => {
                   </p>
                 </CardContent>
               </Card>
-
-              <Card className="text-center shadow-lg">
+              <Card className="text-center shadow-lg bg-gradient-to-b from-blue-100 via-white to-orange-50">
                 <CardContent className="p-8">
                   <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-3xl font-bold text-white">AD</span>
@@ -176,9 +181,9 @@ const About = () => {
             </div>
           </div>
 
-          {/* Facilities Overview */}
+          {/* Facilities Overview with gradient cards */}
           <div className="mb-16">
-            <h2 className="text-4xl font-bold text-primary text-center mb-12 font-playfair">Facilities & Amenities</h2>
+            <h2 className="text-4xl font-bold gradient-text text-center mb-12 font-playfair">Facilities & Amenities</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { title: "Accommodation", desc: "Well-furnished rooms with study spaces" },
@@ -190,7 +195,13 @@ const About = () => {
                 { title: "Medical", desc: "First aid and medical assistance" },
                 { title: "Laundry", desc: "Convenient laundry services" }
               ].map((facility, index) => (
-                <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow">
+                <Card
+                  key={index}
+                  className={`text-center shadow-lg hover:shadow-xl transition-shadow
+                  ${index % 2 === 0
+                    ? 'bg-gradient-to-b from-blue-100 via-white to-yellow-50'
+                    : 'bg-gradient-to-b from-yellow-100 via-white to-blue-100'}`}
+                >
                   <CardContent className="p-6">
                     <h3 className="font-bold text-primary mb-2">{facility.title}</h3>
                     <p className="text-gray-600 text-sm">{facility.desc}</p>
@@ -201,8 +212,8 @@ const About = () => {
           </div>
 
           {/* Values & Culture */}
-          <Card className="shadow-xl">
-            <CardHeader className="bg-gradient-primary text-white">
+          <Card className="shadow-xl bg-gradient-to-bl from-white via-blue-100 to-yellow-50">
+            <CardHeader className="bg-gradient-primary text-white rounded-t-lg">
               <CardTitle className="text-3xl font-playfair text-center">Our Values & Culture</CardTitle>
             </CardHeader>
             <CardContent className="p-8">
