@@ -7,8 +7,8 @@ import { Image } from "lucide-react";
 const About = () => {
   return (
     <Layout>
-      {/* Main wrapper with a subtle white-to-slate gradient */}
-      <div className="py-16 bg-gradient-to-b from-white via-slate-50 to-slate-200 min-h-screen">
+      {/* Remove page-level background gradient to avoid double layering */}
+      <div className="py-16">
         <div className="container mx-auto px-4">
           {/* Header Section with modern gradient text and subtle gradient backdrop */}
           <div className="text-center mb-16 rounded-xl px-2 py-10 bg-gradient-to-br from-white/80 via-blue-50/60 to-slate-100/80 shadow-md">

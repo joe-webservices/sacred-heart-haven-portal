@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -12,7 +13,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, showHeader = true }) =
   const { user, logout, isAuthenticated } = useAuth();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
+    <div className="min-h-screen w-full bg-gradient-to-b from-hostel-primary via-blue-100 to-hostel-secondary transition-colors">
       {showHeader && (
         <header className="bg-white shadow-lg border-b-4 border-primary">
           <div className="container mx-auto px-4 py-4">
@@ -53,7 +54,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, showHeader = true }) =
           </div>
         </header>
       )}
-      
+
       <main>
         {children}
       </main>
